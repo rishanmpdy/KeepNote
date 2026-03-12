@@ -1,13 +1,13 @@
 import { useState, useEffect, useCallback } from "react";
 import "./index.css";
 import { generateId } from "./constants";
-import Header from "./components/Header/";
-import CreateNote from "./components/CreateNote/";
-import NoteCard from "./components/NoteCard/";
-import EditNote from "./components/EditNote/";
-import EmptyState from "./components/EmptyState/";
-import Toolbar from "./components/Toolbar/";
-import ConfirmDialog from "./components/ConfirmDialog/";
+import Header from "./Components/Header";
+import CreateNote from "./Components/CreateNote";
+import NoteCard from "./Components/NoteCard";
+import EditNote from "./Components/EditNote";
+import EmptyState from "./Components/EmptyState";
+import Toolbar from "./Components/Toolbar";
+import ConfirmDialog from "./Components/ConfirmDialog";
 
 function sortNotes(notes, sortBy) {
   return [...notes].sort((a, b) => {
