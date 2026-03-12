@@ -1,0 +1,22 @@
+@import "tailwindcss";
+
+
+body { font-family: 'Roboto', sans-serif; }
+
+@keyframes shimmer {
+  0%   { opacity: .4; }
+  50%  { opacity: .7; }
+  100% { opacity: .4; }
+}
+.shimmer { animation: shimmer 1.4s ease-in-out infinite; }
+
+/* Show note actions & checkbox on hover */
+.note-card .note-actions  { opacity: 0; transition: opacity .15s; }
+.note-card:hover .note-actions { opacity: 1; }
+
+.note-card .note-checkbox { opacity: 0; transition: opacity .15s; }
+.note-card:hover .note-checkbox,
+.note-card-selected .note-checkbox { opacity: 1; }
+
+/* Rich text bullet */
+.rt-list-item::before { content: "• "; }
