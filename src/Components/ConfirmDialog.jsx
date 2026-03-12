@@ -1,6 +1,6 @@
 export default function ConfirmDialog({ message, onConfirm, onCancel }) {
   return (
-    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-[400] p-4" onClick={onCancel}>
+    <div className="fixed inset-0 bg-black/50 flex items-center justify-center z-400 p-4" onClick={onCancel}>
       <div className="bg-[#2d2e30] rounded-lg p-6 max-w-[380px] w-full shadow-2xl" onClick={(e) => e.stopPropagation()}>
         <p className="text-[#e8eaed] text-[15px] mb-5 leading-relaxed">{message}</p>
         <div className="flex justify-end gap-2.5">

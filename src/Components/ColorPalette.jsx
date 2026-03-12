@@ -6,11 +6,11 @@ export default function ColorPalette({ selectedColor, onSelect, position = "bott
     : "top-9 bottom-auto";
 
   return (
-    <div className={`absolute left-0 bg-white rounded-lg shadow-lg p-2 flex flex-wrap gap-1 w-[168px] z-[200] ${posClass}`}>
+    <div className={`absolute left-0 bg-white rounded-lg shadow-lg p-2 flex flex-wrap gap-1 w-4.2 z-200 ${posClass}`}>
       {COLORS.map((c) => (
         <button
           key={c.id}
-          className="w-[26px] h-[26px] rounded-full cursor-pointer shrink-0 hover:scale-110 transition-transform"
+          className="w-6.5 h-6.5 rounded-full cursor-pointer shrink-0 hover:scale-110 transition-transform"
           style={{
             backgroundColor: c.hex,
             border: selectedColor === c.id ? "2px solid #000" : "2px solid transparent",
